@@ -1,0 +1,34 @@
+# jwt
+secret = "supersecretkey1234"
+algorithm = "HS256"
+issuer = "myapp"
+expiration = 7200
+
+# 数据库
+db_url = "mysql://root:060128@localhost:3306/rust-blogs"
+db_pool_timeout = 30
+db_pool_len = 20
+
+# 开发模式
+debug = true
+
+# 日志
+log_level = "Debug"
+
+# web
+port = 3001
+name = "rust-web"
+host = "127.0.0.1"
+
+# 不需要认证的路径
+whitelist_paths = [
+    "/",
+    "/sys_user/login",
+]
+
+# oss
+access_key_id = "" # accessKeyId
+access_key_secret = "" # accessKeySecret
+bucket = "" # bucket
+endpoint = "" # endpoint
+bucket_domain = "" # bucket域名

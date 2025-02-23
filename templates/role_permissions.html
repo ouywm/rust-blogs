@@ -1,0 +1,19 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+        "https://raw.githubusercontent.com/rbatis/rbatis/master/rbatis-codegen/mybatis-3-mapper.dtd">
+<mapper>
+    <select id="query_role_permissions">
+        SELECT p.perm_key as permKey
+        FROM sys_permission p
+        INNER JOIN sys_role_permission rp ON p.perm_id = rp.perm_id
+        INNER JOIN sys_role r ON rp.role_id = r.role_id
+        <where>
+            <if test="!role_codes.is_empty()">
+                and r.role_code IN (
+                <foreach collection="role_codes" item="code" separator=",">
+                    #{code}
+                </foreach>
+                )
+            </if>
+        </where>
+    </select>
+</mapper>
