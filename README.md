@@ -19,10 +19,10 @@
 - 仓库地址: [Art Design Pro](https://github.com/Daymychen/art-design-pro)
 - 技术栈: Vue3 + TypeScript + Vite + Element-Plus
 - 特点: 专注于用户体验和视觉设计的后台管理系统模板
-- 
+
 
 ### 前端项目
-- 1231231
+- [1231231](https://github.com/ouywm/rust-blogs-vue)
 
 ## 🌟 项目特点
 
