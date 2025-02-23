@@ -22,7 +22,7 @@
 
 
 ### 前端项目
-- [1231231](https://github.com/ouywm/rust-blogs-vue)
+- [rust-blogs-vue](https://github.com/ouywm/rust-blogs-vue)
 
 ## 🌟 项目特点
 
